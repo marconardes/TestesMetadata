@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import net.sf.esfinge.metadata.AnnotationReader;
 
-public class teste {
+public class Teste {
 
 	@Test
 	public void test() throws Exception {
