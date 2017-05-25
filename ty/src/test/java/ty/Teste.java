@@ -13,7 +13,8 @@ public class Teste {
 		AnnotationReader ar = new AnnotationReader();
 		ContainerClass container = new ContainerClass();
 		
-		container = ar.readingAnnotationsTo(ClassForReader.class, ContainerClass.class);
+		
+		container = ar.readingAnnotationsTo(ClassForReader.class, container.getClass());
 	}
 
 }
