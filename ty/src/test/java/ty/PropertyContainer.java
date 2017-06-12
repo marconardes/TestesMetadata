@@ -11,7 +11,7 @@ import net.sf.esfinge.metadata.annotation.container.ProcessorType;
 import net.sf.esfinge.metadata.annotation.container.PropertyProcessors;
 import net.sf.esfinge.metadata.container.ContainerTarget;
 
-@ContainerFor(ContainerTarget.ALL)
+@ContainerFor(ContainerTarget.PROPERTY)
 public class PropertyContainer {
 	
 	@ElementName
@@ -24,5 +24,12 @@ public class PropertyContainer {
 	public void setName(String name) {
 		this.name = name;
 	}
+
+	@Override
+	public String toString() {
+		return "PropertyContainer [name=" + name + "]";
+	}
+	
+	
 	
 }
