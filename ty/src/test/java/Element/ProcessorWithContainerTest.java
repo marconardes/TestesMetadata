@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class ProcessorWithContainer {
+public class ProcessorWithContainerTest {
 
 	@Test
 	public void test() {
