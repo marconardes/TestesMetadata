@@ -1,10 +1,13 @@
-package Element;
+package TestCustonReaderAnnoted;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.AnnotatedElement;
 
+import net.sf.esfinge.metadata.annotation.container.ContainerFor;
 import net.sf.esfinge.metadata.annotation.container.ContainsAnnotation;
+import net.sf.esfinge.metadata.container.ContainerTarget;
 
+@ContainerFor(ContainerTarget.ALL)
 public class ExecuteProcessors implements PropertyProcessorInterface {
 
 	private Annotation ann;
@@ -27,6 +30,12 @@ public class ExecuteProcessors implements PropertyProcessorInterface {
 	public void setExistAnnotation(boolean existAnnotation) {
 		this.existAnnotation = existAnnotation;
 	}
+
+	@Override
+	public String toString() {
+		return "ExecuteProcessors [existAnnotation=" + existAnnotation + "]";
+	}
+	
 	
 	
 }
