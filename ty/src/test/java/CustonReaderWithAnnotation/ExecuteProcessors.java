@@ -1,4 +1,4 @@
-package ty;
+package CustonReaderWithAnnotation;
 
 
 import java.lang.annotation.Annotation;
@@ -33,6 +33,7 @@ public class ExecuteProcessors implements PropertyProcessorInterface {
 	public AnnotatedElement execute(Annotation ann, AnnotatedElement ael) {
 		this.ann = ann;
 		this.ael = ael;
+		System.out.println(ael);
 		return ael;
 	}
 

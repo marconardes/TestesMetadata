@@ -1,4 +1,4 @@
-package ty;
+package CustonReaderWithAnnotation;
 
 
 import java.lang.annotation.Retention;

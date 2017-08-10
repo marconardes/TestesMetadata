@@ -1,14 +1,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>testes</groupId>
-  <artifactId>ty</artifactId>
+  <artifactId>newsTest</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>testesLocators</name>
   	<dependencies>
   		<dependency>
   			<groupId>net.sf.esfinge</groupId>
   			<artifactId>metadata</artifactId>
-  			<version>1.4</version>
+  			<version>1.5.5</version>
   		</dependency>
   			<dependency>
 			<groupId>junit</groupId>

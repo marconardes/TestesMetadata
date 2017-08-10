@@ -1,4 +1,4 @@
-package ty;
+package CustonReaderWithAnnotation;
 
 
 import static java.lang.annotation.RetentionPolicy.RUNTIME;

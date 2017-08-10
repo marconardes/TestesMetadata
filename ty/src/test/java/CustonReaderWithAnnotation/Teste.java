@@ -1,4 +1,4 @@
-package ty;
+package CustonReaderWithAnnotation;
 
 import static org.junit.Assert.*;
 
