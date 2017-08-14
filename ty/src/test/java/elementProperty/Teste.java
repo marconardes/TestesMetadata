@@ -1,4 +1,4 @@
-package CustonReaderWithAnnotation;
+package elementProperty;
 
 import static org.junit.Assert.*;
 
