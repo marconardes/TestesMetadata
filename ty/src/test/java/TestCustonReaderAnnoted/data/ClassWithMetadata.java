@@ -1,6 +1,6 @@
 package TestCustonReaderAnnoted.data;
 
-import TestCustonReaderAnnoted.OutraAnnotation;
+import TestCustonReader.readerisprocessor.OutraAnnotation;
 
 @OutraAnnotation
 public class ClassWithMetadata {
