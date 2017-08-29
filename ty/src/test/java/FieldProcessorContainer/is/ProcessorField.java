@@ -5,18 +5,15 @@ import java.lang.reflect.AnnotatedElement;
 
 
 
-public class DominioSegundo implements ProcessorInterface {
+public class ProcessorField implements ProcessorInterface {
 	
 	private String field1;
 
 
 	@Override
 	public void processorInitializationAnnotation(Annotation ann) {
-		field1 =ann.annotationType().getName();
+		field1 =((Entidade)ann).nome();
 	}
-
-
-
 
 
 	@Override
@@ -25,6 +22,4 @@ public class DominioSegundo implements ProcessorInterface {
 		System.out.println(field1);
 	}
 	
-	
-
 }

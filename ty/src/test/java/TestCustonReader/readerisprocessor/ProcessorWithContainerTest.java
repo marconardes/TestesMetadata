@@ -18,7 +18,12 @@ public class ProcessorWithContainerTest {
 		
 		ct = ar.readingAnnotationsTo(ClassWithMetadata.class, Container.class);
 		
+		for (PropertyProcessorInterface interf : ct.getInterf()) {
+			interf.print();
+		}
+		
 		ExecuteProcessors processor  =(ExecuteProcessors) ct.getInterf().get(0);
+		
 		
 		assertTrue(processor.isExistAnnotation());
 		

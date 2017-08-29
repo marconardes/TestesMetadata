@@ -2,11 +2,8 @@ package FieldProcessorContainer.is;
 
 
 public class Dominio{
-	@Entidade
+	@Entidade(nome = "nome 1")
 	private String field1;
-	@Entidade
+	@Entidade(nome = "nome 2")
 	private int field2;
-		
-	
-
 }

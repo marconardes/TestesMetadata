@@ -1,15 +1,9 @@
 package MethodProcessorContainer.is;
 
 
-public class Dominio implements OldDommi{
+public class Dominio implements DominioInterface{
 	
-	private String field1;
-	
-	private int field2;
-	
-	
+	@Override
 	public void entidade1(){}
 	
-	
-
 }

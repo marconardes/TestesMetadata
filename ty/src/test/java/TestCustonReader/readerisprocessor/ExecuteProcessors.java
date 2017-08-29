@@ -16,10 +16,10 @@ public class ExecuteProcessors implements PropertyProcessorInterface {
 	@ContainsAnnotation(OutraAnnotation.class)
 	private boolean existAnnotation;
 
-	public AnnotatedElement Execute(Annotation ann, AnnotatedElement ael) {
+	@Override
+	public void execute(Annotation ann, AnnotatedElement ael) {
 		this.ann = ann;
 		this.ael = ael;
-		return ael;
 
 	}
 
@@ -32,10 +32,11 @@ public class ExecuteProcessors implements PropertyProcessorInterface {
 	}
 
 	@Override
-	public String toString() {
-		return "ExecuteProcessors [existAnnotation=" + existAnnotation + "]";
+	public void print() {
+		System.out.println("Elemento "+ael+" anotado com " + ann);
+		System.out.println("A anotação "+ ann+ " "+existAnnotation);
+		
 	}
-	
-	
+
 	
 }

@@ -12,7 +12,7 @@ import net.sf.esfinge.metadata.annotation.finder.SearchOnEnclosingElements;
 @SearchOnEnclosingElements
 @SearchInsideAnnotations
 @SearchOnAbstractions
-@ProcessorAnnotation(DominioSegundo.class)
+@ProcessorAnnotation(Processor.class)
 public @interface Entidade {
 	
 }

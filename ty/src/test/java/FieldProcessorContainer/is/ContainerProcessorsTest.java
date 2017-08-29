@@ -13,18 +13,16 @@ import net.sf.esfinge.metadata.AnnotationReader;
 
 public class ContainerProcessorsTest {
 
-	@Test
-	//@Ignore
-	public void test() throws Exception {
+	public static void main(String args[]) throws Exception {
 		Container container = new Container();
 		AnnotationReader a1 = new AnnotationReader();
 		container = a1.readingAnnotationsTo(Dominio.class, container.getClass());
 		
 		container.map.forEach((key, value) -> {
+			System.out.println(key);
 		    value.returnDados();
 		});
 		
-		assertNotSame(0, container.getMap().size());
 	}
 
 }

@@ -13,7 +13,6 @@ import net.sf.esfinge.metadata.container.ContainerTarget;
 
 public class Container{
 	
-	
 	@ProcessorPerField(configAnnotation=ProcessorAnnotation.class,type=ProcessorType.READER_IS_PROCESSOR)
 	Map<Field,ProcessorInterface> map;
 
@@ -23,8 +22,6 @@ public class Container{
 
 	public void setMap(Map<Field, ProcessorInterface> map) {
 		this.map = map;
-	}
-	
-	
+	}	
 	
 }
